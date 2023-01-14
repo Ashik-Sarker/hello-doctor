@@ -6,7 +6,7 @@ const Navbar = () => {
   const menuLink =
                   <>
                     <li>
-                      <Link to="/home" className="mr-4">
+                      <Link to="/" className="mr-4">
                         Home
                       </Link>
                     </li>
@@ -66,7 +66,7 @@ const Navbar = () => {
           Hello Doctor!
         </Link>
       </div>
-      <div className=" hidden lg:flex">
+      <div className="hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           {menuLink}
         </ul>

@@ -30,7 +30,7 @@ const Testimonials = () => {
     
   
   return (
-    <section className="my-24 mx-4 lg:mx-0">
+    <section className="mb-28 mt-20 mx-4 lg:mx-0">
       <div className="flex justify-between">
         <div className="lg:mx-4">
           <h4 className="text-secondary font-bold mb-2">Testimonial</h4>
@@ -39,7 +39,7 @@ const Testimonials = () => {
         <img className="max-w-[100px] lg:max-w-[200px]" src={testBackImg} alt="" />
       </div>
 
-      <div className="mt-24 lg:mt-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:mx-20">
+      <div className="mt-20 lg:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:mx-20">
         {testimonials.map((testimonial) => {
           return <Testimonial key={testimonial.id} testimonial={testimonial} />;
         })}

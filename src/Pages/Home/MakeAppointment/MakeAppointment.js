@@ -7,7 +7,7 @@ const MakeAppointment = () => {
   return (
     <div
       style={{ backgroundImage: `url(${appointmentBackImage})` }}
-      className=" mx-auto my-[200px]"
+      className=" mx-auto mt-[200px]"
     >
       <div className="hero-content p-0 flex-col lg:flex-row">
         <img alt="" src={doctor} className="hidden lg:flex max-w-[600px] rounded-lg -mt-32" />

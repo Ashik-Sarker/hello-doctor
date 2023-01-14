@@ -1,0 +1,4 @@
+.input-disabled, .input[disabled]{
+    background-color: rgb(200, 210, 207);
+    border: 0;
+}
