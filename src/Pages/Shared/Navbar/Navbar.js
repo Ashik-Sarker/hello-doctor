@@ -36,8 +36,8 @@ const Navbar = () => {
                   </>
 
   return (
-    <div className="navbar h-16 text-accent max-w-[96%] mx-auto">
-      <div className="navbar-start">
+    <div className="flex justify-between h-16 text-accent max-w-[96%] mx-auto">
+      <div className="">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -66,7 +66,7 @@ const Navbar = () => {
           Hello Doctor!
         </Link>
       </div>
-      <div className="navbar-end hidden lg:flex">
+      <div className=" hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           {menuLink}
         </ul>
