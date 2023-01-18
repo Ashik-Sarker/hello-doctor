@@ -20,12 +20,22 @@ const AvailableAppointment = ({ selectedDate, setSelectedDate }) => {
       </p>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {data.map((item) => {
-          return <AppointmentCart key={item._id} item={item} setTreatment={setTreatment}/>;
+          return (
+            <AppointmentCart
+              key={item._id}
+              item={item}
+              setTreatment={setTreatment}
+            />
+          );
         })}
       </div>
-      {
-        treatment !== null && <AppointmentModal treatment={treatment} selectedDate={selectedDate}/>
-      }
+      {treatment !== null && (
+        <AppointmentModal
+          treatment={treatment}
+          setTreatment={setTreatment}
+          selectedDate={selectedDate}
+        />
+      )}
     </div>
   );
 };

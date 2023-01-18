@@ -13,11 +13,12 @@ const AppointmentCart = ({ item, setTreatment }) => {
         </p>
         <div className="card-actions">
           <label
+            disabled = {slots.length === 0}
             onClick={() => setTreatment(item)}
             htmlFor="appointment_modal"
             className="btn btn-accent"
           >
-            open modal
+            Set Appointment
           </label>
         </div>
       </div>
